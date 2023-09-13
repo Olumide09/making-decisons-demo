@@ -6,7 +6,7 @@
 
 
 let jonSnowAttack = 25;
-let jamieLannisterAttack = 135;
+let jamieLannisterAttack = 35;
 
 if (jonSnowAttack > jamieLannisterAttack) {
     console.log('Jon Snow has a better attack than Jamie Lannister')
@@ -24,4 +24,15 @@ if (jonSnowHealth <= jamieLannisterAttack) {
 } else {
     jonSnowHealth = jonSnowHealth - jamieLannisterAttack
     console.log(`Jon Snow health is down to ${jonSnowHealth}`)
+}
+
+jonSnowDefense += 25;
+
+// second attack
+
+if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense ) {
+    console.log('Jon snow is dead')
+} else {
+    jonSnowHealth -= jamieLannisterAttack - jonSnowDefense
+    console.log(`Jon Snows health is down to ${jonSnowHealth}`)
 }
