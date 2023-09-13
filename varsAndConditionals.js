@@ -36,3 +36,17 @@ if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense ) {
     jonSnowHealth -= jamieLannisterAttack - jonSnowDefense
     console.log(`Jon Snows health is down to ${jonSnowHealth}`)
 }
+
+let isDead = false 
+
+for (let i = 1; i <= 3; i++) {
+    isDead = Math.random() > .5
+    if (isDead === true) {
+        console.log(`John has died after ${i} rounds`)
+        break
+    }
+}
+
+if (isDead === false) {
+    console.log('It is a miracle bro is alive')
+}
