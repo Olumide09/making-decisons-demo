@@ -55,3 +55,29 @@ console.log(pokemon)
 backpack.unshift('jynx statue')
 console.log('backpack after adding the statue:')
 console.log(backpack)
+
+backpack.shift()
+console.log('backpack after dumping the statue')
+console.log(backpack)
+
+let favePokemon = 'Butterfree'
+backpack.shift()
+
+let lunch = pokemon.splice(3,1,favePokemon)
+
+console.log('here is my bag after getting butterfree')
+console.log(backpack)
+console.log('my pokemons')
+console.log(pokemon)
+console.log('my lunch:')
+console.log(lunch)
+
+for (let i = 0; i < pokemon.length; i = i + 1) {
+    let currentPokemon = pokemon[i]
+    if (currentPokemon === 'pidgey') {
+        pokemon[i] = 'pigeotto'
+    }
+}
+
+console.log('after the evolution event, my pokemon are now:')
+console.log(pokemon)
